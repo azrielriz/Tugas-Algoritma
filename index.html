@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let panjang = 60;
+        let lebar = 40;
+        luas = panjang * lebar;
+        console.log(luas)
+        
+        // mencari luas lingkaran
+        console.log("luas liangkaran dengana jaari jari 10")
+        const phi = 3.14;
+        let r = 10;
+        hasil = phi * r * r;
+        console.log(hasil)
+     
+
+        // mencari keliling persegi panjang
+        const p = 200;
+        let l = 150;
+        hasil = 2 * p + 2 * l;
+        console.log(hasil)
+
+//         mencari luas segitiga
+        let a = 70;
+        let t = 40;
+        lg = 1/2 * a * t;
+        console.log(lg)
+// ...........
+        let sendok= 9000
+        let garpu= 5000
+        let piring= 10000
+         let totalharga= sendok + garpu + piring
+    
+
+         if (totalharga > 15000) {
+            let diskon = 10/100 * totalharga 
+            let setelahdiskon= totalharga - diskon
+            console.log("jadi harga yang harus di bayar" + setelahdiskon)
+
+         }
+
+         else {
+            console.log("jadi harga yang harus di bayar" + diskon)
+         }
+// ..........
+        let jam = 0
+        
+        
+        if(jam>0 && jam<6) {
+            if(jam>0){
+                console.log("100000")
+            }
+            
+            console.log("100000")
+        }
+
+        else if(jam==6) {
+            console.log("200000")
+        }
+
+        else if (jam>6) {
+            console.log("300000")
+        }
+
+        else{
+            
+            console.log("tidak mendapat gaji lembur")
+        }
+//   .............
+        let tinggiair = 500;
+        let status ; 
+
+        if (tinggiair <= 500) {
+            status = "status aman";
+        }
+        else if (tinggiair <= 600) {
+            status = "status waspada";
+        }
+        else if (tinggiair <= 650) {
+            status = "status siaga1";
+        }
+        else if (tinggiair > 650) {
+            status = "status siaga2";
+        }
+        else {
+            status = "selesai";
+        }
+
+
+        console.log(tinggiair)
+        console.log(status)
+
+        let angka= 7 ;
+
+        if (angka >= 0){
+            console.log ("positif")
+            
+            if ( angka %2 == 0){
+                console.log("genap")
+            }
+            
+            else {
+                console.log("ganjil")
+            }
+        }
+            
+        else {
+            console.log("negatif")
+            
+            if(angka %2 == 0){
+                console.log ("genap")
+            }
+            else {
+                console.log ("ganjil")
+            }
+        }
+
+
+
+// pekerjaan rumah tentang tiket pesawat
+
+let VIP = 0;
+let hargavip = 125000;
+let EKSEKUTIF = 0;
+let hargaeksekutif = 100000;
+let EKONOMI = 0;
+let hargaekonomi = 75000;
+let tiket = VIP + EKSEKUTIF + EKONOMI;
+
+
+// kelas VIP    .........
+
+if(VIP <= 50){
+
+    
+    if(VIP >= 35 && VIP <= 50){
+        let keuntunganvip1 = VIP * hargavip * 25/100 ;
+        console.log ("keuntungan dari vip " + keuntunganvip1 + " jumlah tiket " + VIP)
+        
+    }
+    
+    else if(VIP >= 20 && VIP <= 35){
+        let keuntunganvip2 = VIP * hargavip * 15/100 ;
+        console.log ("keuntungan dari vip " + keuntunganvip2 + " jumlah tiket " + VIP)
+    }
+    
+    else if(VIP <= 20 && VIP >= 0){
+        let keuntunganvip3 = VIP * hargavip * 5/100 ;
+        console.log ("keuntungan dari vip " + keuntunganvip3 + " jumlah tiket " + VIP)
+    }
+    
+    else {
+        console.log("tidak ada keuntungan dari vip")
+    }
+}
+
+else if(VIP >= 50){
+    let ketikalebihjumlah = 50 * hargavip * 25/100;
+    console.log ("hanya diambil 50 tiket vip dan keuntunganya  " + ketikalebihjumlah + " jumlah tiket 50")
+}
+
+else {
+    console.log("tidak ada keuntungan dari vip" + " jumlah tiket " + VIP)
+}
+
+// Kelas Eksekutif  ........
+
+if(EKSEKUTIF <= 50 && EKSEKUTIF >= 0){
+
+    if(EKSEKUTIF >= 40){
+        let keuntungantif1 = EKSEKUTIF * hargaeksekutif * 20/100;
+        console.log("keuntungan dari Eksekutif " + keuntungantif1 + " jumlah tiket Eksekutif yang laku " + EKSEKUTIF)
+    }
+
+    else if(EKSEKUTIF <= 40 && EKSEKUTIF >= 20){
+        let keuntungantif2 = EKSEKUTIF * hargaeksekutif * 10/100;
+        console.log("keuntungan dari Eksekutif " + keuntungantif2 + " jumlah tiket Eksekutif yang laku " + EKSEKUTIF)
+    }
+
+    else {
+        let keuntungantif3 = EKSEKUTIF * hargaeksekutif * 2/100;
+        console.log("keuntungan dari Eksekutif " + keuntungantif3 + " jumlah tiket Eksekutif yang laku " + EKSEKUTIF)
+    }
+}
+
+else if(EKSEKUTIF >= 50){
+    let eksehabis = 50 * hargaeksekutif * 20/100;
+    console.log ("hanya diambil 50 tiket eksekutif dan keuntunganya  " + eksehabis + " jumlah tiket 50")
+}
+
+else {
+    console.log("tidak ada keuntungan dari eksekutif dan jumlah tiket " + EKSEKUTIF)
+}
+
+// kelas Ekenomi    ..........
+
+if(EKONOMI <= 50 && EKONOMI >= 0){
+    let keuntunganekonomi = EKONOMI * hargaekonomi * 7/100;
+    console.log("keuntungan dari kelas ekonomi " + keuntunganekonomi + " tiket yang terjual " + EKONOMI)
+}
+
+else if(EKONOMI >= 50){
+    let ketikahabis = 50 * hargaekonomi * 7/100;
+    console.log("hanya diambil 50 tiket dan keuntunganya " + ketikahabis)
+}
+
+else{
+    console.log("tidak ada keuntungan dari ekonomi dan jumlah tiket " + EKSEKUTIF)
+}
+
+
+console.log("tiket yang terjual dari seluruh kelas " + tiket)
+
+
+
+
+    
+    
+
+
+
+
+
+            
+
+    
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
